@@ -60,4 +60,5 @@ void	ft_print_comb2(void)
 		}
 		nb11++;
 	}
+	write(1, "\n", 1);
 }
