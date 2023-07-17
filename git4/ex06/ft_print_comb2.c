@@ -29,6 +29,8 @@ void	number_r(int start1, int start2, int nb11, int nb12)
 		nb2 = start2;
 		while (nb2 <= 9)
 		{
+			if (!((start1 == 0 && start2 == 1) && (nb11 == 0 && nb12 == 0)))
+				ft_putchar(32);
 			ft_putchar(nb11 + 48);
 			ft_putchar(nb12 + 48);
 			ft_putchar(32);
