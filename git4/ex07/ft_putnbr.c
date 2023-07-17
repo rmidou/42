@@ -46,10 +46,7 @@ void	ft_nbnegative(int nb)
 {
 	ft_putchar(45);
 	if (nb == -2147483648)
-	{
-		ft_display(214748364);
-		ft_putchar(8 + 48);
-	}
+		write(1, "-2147483648", 11);
 	else
 		ft_display(nb * (-1));
 }
@@ -60,4 +57,5 @@ void	ft_putnbr(int nb)
 		ft_nbnegative(nb);
 	else
 		ft_display(nb);
+	ft_putchar('\n');
 }
